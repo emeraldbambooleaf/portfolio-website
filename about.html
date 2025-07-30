@@ -2,108 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JChristine Truong UX/UI</title>
+    <title>Miss Christine Truong UX/UI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
-
     <header>
-        <div>
-            <h1>Christine Truong</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="header">
+            <img class="logo" src="img/logo.jpg" alt="Emerald Bamboo Logo">
+            <span class="site-title">Christine Truong</span>
+        </div>
+        <div class="header">
+                <nav class="buttons">
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>  
         </div>
     </header>
 
     <main>
-        <div>
-            <div>
+        <div class="container">
                 <h1>About</h1>
-            </div>
+                <img src="img/profilepic.png" alt="profilepic">
         </div>
-        <div>
-            <div>
-                <picture>
-                    <source srcset="image" media="max-width:767px">
-                    <img src="img/image_.jpg" alt="christinepic">
-                </picture>
-                <div>
-                    <div>
-                        <h2>My Story</h2>
-                        <p>Born and raised in SoCal, </p>
-                            
-                            <p>Isn[']t that what UX designers do, empathize?</p>
-                            
-                            <p> I am a UX/UI designer with a background in education and engineering. My life experience has laid a foundation for the sound application of UX research and design principles.
-                            
-                            My technical and soft skills, including programming background and communication with students and paretns, illustrate my capabilities. 
-                            </p>
-                            <a href="files/resumecolor.pdf" target="_blank">Download My Resume</a>
+        <div class="container">
+            <h2>My Story</h2>
+            <p>Born and raised in SoCal, 
+                I am a UX/UI designer with a background in education and engineering. 
+                My life experience has laid a foundation for the sound application of 
+                UX research and design principles.
+                
+                My technical and soft skills, 
+                including programming background and communication with students and parents, 
+                illustrate my capabilities. 
+            </p>
+        </div>
+        <div class="container buttons center">
+                <a href="files/resumecolor.pdf" target="_blank">Download My Resume</a>
+        </div>
 
-                    </div>
-                    <div>
-                        <h2>Skills [&] Tools</h2>
-                        <div>
-                            <div>
-                                <h3>Relevant Skills</h3>
-                                <ul>
-                                    <li>User research (Competitor analysis, interviews, data analysis)</li>
-                                    <li>Interaction design (User Flows, wireframes, site maps, prototypes)</li>
-                                    <li>UI/Visual design</li>
-                                    <li>Frontend development (HTML, CSS, JavaScript)</li>
-                                    <li>Strong interpersonal and communication skills</li>
-                                    <li>Curriculum creation of math, SAT, english, and college essay</li>
-                                    <li>Skilled atAgile/Scrum processes</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3>Tools I Use</h3>
-                                <ul>
-                                    <li>Figma</li>
-                                    <li>Github</li>
-                                    <li>Canva</li>
-                                    <li>MATLAB</li>
-                                    <li>Visual Studio</li>
-                                </ul>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="container">
+            <h2>Skills & Tools</h2>
+            <h3>Relevant Skills</h3>
+                <ul>
+                    <li>User research (Competitor analysis, interviews, data analysis)</li>
+                    <li>Interaction design (User Flows, wireframes, site maps, prototypes)</li>
+                    <li>UI/Visual design</li>
+                    <li>Frontend development (HTML, CSS, JavaScript)</li>
+                    <li>Strong interpersonal and communication skills</li>
+                    <li>Curriculum creation of math, SAT, English, and college essay</li>
+                    <li>Skilled at Agile/Scrum processes</li>
+                </ul>
+
+            <h3>Tools I Use</h3>
+            <ul>
+                <li>Figma</li>
+                <li>Github</li>
+                <li>Canva</li>
+                <li>MATLAB</li>
+                <li>Visual Studio</li>
+            </ul>  
         </div>
-        
+  
     </main>
     
     <footer id="contact">
-        <div>
-            <h2>Get in Touch</h2>
+        <div class="footer">
+            <h2 class="center">Get in Touch</h2>
 
-            <p>Please contact me if you have any questions or would like to work with me.</p>
+            <p class="center">
+                Please contact me if you have any questions or would like to work with me.
+            </p>
 
-            <div><a href="">Email me</a></div>
-
-            <div>     <a href="https://www.linkedin.com/in/bamboo-learning-center/" target="_blank">
-                    <img src="img/linkedin-icon.svg">
-                </a>
-                 <a href="https://www.tiktok.com" target="_blank">
-                    <img src="img/icon.svg">
-                </a>
-                <a href="https://www.instagram.com/emeraldbamboo/" target="_blank">
-                    <img src="img/instagram-icon.svg">
+            <div class="center container">
+                <div class="tight">
+                <img src="img/email.svg" alt="email icon" class="logo">
+                </div>
+                <a href="mailto:christinet@engineering.ucla.edu">
+                 christinet@engineering.ucla.edu
                 </a>
             </div>
 
-            <div>Copyright Christine Truong 2025</div>
+            <div class= "center container">
+                <div class="tight">
+                <img src="img/linkedin.svg" alt="linkedin" class="logo center">
+                </div>
+                <a href="https://www.linkedin.com/in/bamboo-learning-center/">  
+                https://www.linkedin.com/in/bamboo-learning-center/
+                </a>
+            </div>
+
+            <div class="center container">
+                <div class="tight">
+                <img src="img/phone.svg" alt="phone icon" class="logo">
+                </div>
+                <a href="tel:5626508822">(562) 650-8822
+                </a>
+            </div>
+            <p class="center copyright">Copyright Christine Truong 2025</p>
         </div>
     </footer>
-
 </body>
 
 </html>
