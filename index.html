@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Miss Christine UX Researcher & Engineering </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -13,91 +12,106 @@
 
 <body>
     <header>
-        <div class="container">
-            <img src="img/logo.png" alt="Logo" />
-            <nav>
-              <ul class="navigation">
-        <div>
-            <a href="/index.html"><b>Bamboo Learning Center: Miss Christine</b></a>
-            <nav>
-                <a href="work.html">Work</a>
-                <a href="about.html">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
+        <div class="header">
+            <img class="logo" src="img/logo.jpg" alt="Emerald Bamboo Logo">
+            <span class="site-title">Christine Truong</span>
+        </div>
+        <div class="header">
+                <nav class="buttons">
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>  
         </div>
     </header>
+
     <main>
         <div id="hero">
             <div class="container">
-                <h1>
-            <div>
-                <h1>Hi there! My name is <span>Christine Truong</span>.</h1>
-            </div>
-            <div>
-                <p>I am a UX Researcher passionate about educational technologies!</p>
+                    <h1>Hi there! My name is <span>Christine Truong</span>.</h1>
+                    <p>I am a UX Researcher passionate about educational technologies!</p>
             </div>
         </div>
-        <div id="projects">
-            <div>
-                <h2>My Work</h2>
-            </div>
-            <div>
-                <div id="Systematic Steps">
-                    <div>
-                        <picture>
-                            <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-                            <img src="https://placehold.co/1200x800" alt="placeholder for cover image">
-                        </picture>
-                        
-                    </div>
-                    <div>
-                        <h3>Systems, Not Goals</h3>
-                        <p><i>Systematic Steps Broken Down to Reach your Goals!</i></p>
-                        <p>This app tracks and creates goals and keeps track of your progress so you can achieve your long term dreams!</p>
-                        <p><a href="#">Read more</a></p>
-                    </div>
-                </div>
-                <div id="Themed Vocabulary Worksheets ">
-                    <div>
-                        <picture>
-                        <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-                        <img src="https://placehold.co/1200x800" alt="placeholder for cover image">
-                        </picture>
-                        
-                    </div>
-                    <div>
-                        <h3>Vocab Worksheets</h3>
-                        <p><i>Vocabulary Practice for Every Occasion</i></p>
-                        <p> Need help practicing your vocabulary?
-                            Download vocabulary for many topics here!
-                           </p>
-                        <p><a href="#">Read more</a></p>
-                    </div>
-                </div>
-            </div>
+
+        <div class="container" id="features">
+            <h2>My Unique Features</h2>
+            <p>My background in engineering provides me with a strong foundation in problem-solving and logical thinking, 
+                while my curriculum development experience has refined my skills in information organization and user-centered design.</p>
+            <p class="buttons"><a href="about.html">Learn more</a></p>
+        </div>
+
+
+        <div id="projects" class="container">
+
+            <h2>My Work</h2>
+
+
+            <h3>Systems, Not Goals</h3>
+            <p>This app tracks and creates goals and keeps track of your progress,
+                    so you can achieve your long term dreams!</p>
+
+            <picture>
+                <img src="img/onboarding-desktop.png" alt="systematic-steps-desktop">
+            </picture>
+            <p> The onboarding screen helps users get to know how to use the website.</p>
+
+            <picture>
+            <img src="img/systematic-steps-home.png" alt="systematic-steps-home">
+            </picture> 
+            <p> The home page displays all sample goals the user can modify or delete,
+                along with profile information and a button to add goals.
+            </p>
+
+
+            <picture>
+                <img src="img/systematic-steps-goals.png" alt="systematic-steps-goals">
+                </picture> 
+
+                <p> This page replicates a user's interaction with the goals modification page.
+                </p>
+                <p class="buttons"><a href="work.html">Learn more</a></p>
+
+
         </div>
     </main>
-    <footer>
-        <div class="container">
-            <h2></h2>        
-        <div>
-            <h2>Get in Touch</h2>
-            <p>Do you like my work and want to discuss opportunities? Please get in touch. Call: 
-                <a href="tel:+15626508822">+1 (562) 650-8822</a>. Prefer sending an email?</p>
-            <div>
-                <a href="mailto:emerald.bamboo.learning@gmail.com">Email me</a>
-            </div>
-            <div>
-                <a href="LINKEDIN-URL" target="_blank">
-                    <img src="http://via.placeholder.com/32x32" alt="placeholder for icon"> 
+
+    <footer id="contact">
+        <div class="footer">
+            <h2 class="center">Get in Touch</h2>
+
+            <p class="center">
+                Please contact me if you have any questions or would like to work with me.
+            </p>
+
+            <div class="center container">
+                <div class="tight">
+                <img src="img/email.svg" alt="email icon" class="logo">
+                </div>
+                <a href="mailto:christinet@engineering.ucla.edu">
+                 christinet@engineering.ucla.edu
                 </a>
-                <a href="Behance-URL" target="_blank">
-                    <img src="http://via.placeholder.com/32x32" alt="placeholder for icon"> 
+            </div>
+
+            <div class= "center container">
+                <div class="tight">
+                <img src="img/linkedin.svg" alt="linkedin" class="logo center">
+                </div>
+                <a href="https://www.linkedin.com/in/bamboo-learning-center/">  
+                https://www.linkedin.com/in/bamboo-learning-center/
                 </a>
             </div>
-            <p>Copyright Christine Truong 2025</p>
+
+            <div class="center container">
+                <div class="tight">
+                <img src="img/phone.svg" alt="phone icon" class="logo">
+                </div>
+                <a href="tel:5626508822">(562) 650-8822
+                </a>
+            </div>
+            <p class="center copyright">Copyright Christine Truong 2025</p>
         </div>
     </footer>
+
 
 </body>
 
