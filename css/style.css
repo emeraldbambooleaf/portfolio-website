@@ -356,6 +356,11 @@ nav > ul > li > a {
   max-width: 250px;
 }
 
+p{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
 nav {
   width: auto;
   float: right;
