@@ -49,6 +49,7 @@
   
   a {
     text-decoration: none;
+    margin: 0 auto;
   }
   
   a:hover {
@@ -63,11 +64,16 @@
     padding: 0.5em 1.2em;
     border-radius: 6px;
     font-weight: 600;
+    
     cursor: pointer;
     display: inline-block;
     margin: 0.2em auto;
     text-align: center;
+  }
 
+  .buttons {
+    text-align: center;
+    margin: 1em 0;
   }
 
   .buttons a:hover {
@@ -211,7 +217,7 @@ nav > ul > li > a {
 
 .navtoggle.responsive li  {
   display: block;
-  padding: 5px 0;
+  padding: 5px 20px;
   border-top: 1px solid #4A4A4A;
 }
 
@@ -350,6 +356,14 @@ nav > ul > li > a {
 
 .col-lg-5 {
   width: 40%;
+  padding-left: 1em;
+}
+
+.row {
+  display: flex;
+  justify-content: center;     /* center horizontally */
+  gap: 20px;              /* space between columns */
+  margin: 0 auto;             /* center the row in the page */
 }
 
 .logo{
@@ -381,6 +395,12 @@ nav > ul > li {
 
 .navtoggle li:last-child {
   display: none;
+}
+
+
+.navtoggle.responsive li  {
+  padding: 5px 20px;
+  border-top: none;
 }
 
 
