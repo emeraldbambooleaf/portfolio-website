@@ -27,7 +27,8 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: var(--slate-gray);
-    margin: .1em 0;
+    margin: .1em 0.5em;
+    text-align: center;
   }
 
   p {
@@ -81,7 +82,6 @@
 
 
   #intro {
-    background-color: var(--light-blue);
     width: 100%;
     margin: .5em auto;
     padding: .3em;
@@ -92,13 +92,13 @@
     width: 3em;
     height: auto;
     display: inline-block;
+    margin: 0 1em;
   }
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 1em 0em;
   }
 
   .footer {
@@ -124,6 +124,8 @@
     font-style: italic
   }
 
+
+    /* Animations */
   @keyframes color-change {
     from {fill: #edc655;}
     to {fill: #f76414;}
@@ -159,12 +161,86 @@
     animation: 34s cloud-move-reverse infinite alternate linear;
   }
 
-  @media  (min-width: 768px), (min-width: 1024px) {
+/*style the header*/
+header {
+  background-color: var(--light-blue);
+  width: 100%;
+  padding: 4px 0;
+  position: relative; 
+}
+
+/*style the logo*/
+.logo{
+  max-width: 150px;
+  padding-top: 20px;
+}
+
+.menu-img{
+  padding-top: 20px;
+}
+
+/*Navigation Styling*/
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li > a {
+  font-weight: 700;
+  color: var(--slate-gray);
+}
+
+/*Style the hamburger icon*/
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 5px 0;
+  border-top: 1px solid #4A4A4A;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+  text-align: center;
+
+}
+
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
+
+  /*
+  .myNavtoggle.responsive {
+    display: block;
+  }
+
+
+   Different Screen Sizes 
+  @media  (min-width: 641px) {
     header {
       display: flex;
-      justify-content: space-between; /* logo/title on left, nav on right */
-      align-items: center;           /* vertically center everything */
-      padding: 0 20px;                /* optional spacing */
+      justify-content: space-between; /* logo/title on left, nav on right 
+      align-items: center;           /* vertically center everything 
+      padding: 0 20px;                /* optional spacing 
     }
     .col-md-6 {
       width: 50%;   
@@ -172,9 +248,9 @@
     
     .row {
         display: flex;
-        justify-content: center;     /* center horizontally */
-        gap: 20px;              /* space between columns */
-        margin: 0 auto;             /* center the row in the page */
+        justify-content: center;     /* center horizontally 
+        gap: 20px;              /* space between columns 
+        margin: 0 auto;             /* center the row in the page 
     }
 
     h1, h2{
@@ -194,4 +270,125 @@
     padding: 0 auto;
   }
 
+  .menu-img {
+    display: none;
+    width: 15px;  /* adjust to your icon size 
+    height: 15px;
+  }
+  
+}
+
+@media  (max-width: 641px) {
+
+  .categories {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-img {
+    display: block; 
+    justify-content: right;
+    padding: 0 1em;
+  }
+
+}
+
+*/
+
+/*
+@media only screen and (min-width: 640px) { 
+  header {
+    text-align: unset;
+    padding: 15px 0 15px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 { 
+    margin-top: 0;
+  }
+
+  #index-page h4 { 
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+*/
+/*Media query for screens large devices*/
+@media only screen and (min-width: 640px) {
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-lg-7 {
+  width: 60%;
+}
+
+.col-lg-5 {
+  width: 40%;
+}
+
+.logo{
+  max-width: 250px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-right: 4px;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+
+.active {
+  background-color: var(--soft-yellow);
+  color: var(--slate-gray);
+  border: none;
+  padding: 0.5em 1.2em;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.2em auto;
+  text-align: center;
+}
 }

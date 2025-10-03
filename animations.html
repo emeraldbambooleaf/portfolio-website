@@ -11,20 +11,59 @@
 
 <body>
     <header>
+        <!--For the navigation-->
+        <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
+            <a href="index.html">
+                <img class="logo" src="img/logo.jpg" alt="Emerald Bamboo Logo">
+            </a>
+            <nav>
+              <ul class="navigation">
+                <li class="active">
+                  <a href="index.html">Work</a>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                  <a href="#contact" onclick="menuToggle()">Contact</a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()">
+                    <img src="img/bars.svg" class="menu-img" alt="menu icon">                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+
+<!--
+    <header>
         <div class="header">
             <img class="logo" src="img/logo.jpg" alt="Emerald Bamboo Logo">
             <span class="site-title">Christine Truong</span>
         </div>
         <div class="header">
-                <nav class="buttons">
+                <nav class="buttons categories">
                     <a href="work.html">Work</a>
                     <a href="about.html">About</a>
                     <a href="#contact">Contact</a>
+                   
                 </nav>  
+                <div class="navtoggle" id="myNavtoggle">
+                    <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                        <img src="img/bars.svg" class="menu-img" alt="menu icon">
+                    </a>
+                </div> 
         </div>
     </header>
+-->
 
     <main>
+
         <div class="container">
             <h1>My Work</h1>  
             <p>
@@ -671,6 +710,14 @@
             <p class="center copyright">Copyright Christine Truong 2025</p>
         </div>
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
+
 </body>
 
 </html>
